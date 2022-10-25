@@ -1,0 +1,106 @@
+.fondo-general{
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  justify-content: center;
+}
+/* <!-- contiene todas las cajas  --> */
+.contenedor-general{
+  width: 98%;
+}
+/* <!-- franja amarilla de arriba --> */
+.contenedor-superior{
+  background-color:  rgb(255, 196, 0);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+justify-content: space-evenly;
+
+}
+/* <!-- nombre del portal --> */
+.logo{
+  font-family: 'Shrikhand', cursive;
+  font-size: 450%;
+}
+
+/* <!-- link para ingresar --> */
+.ingresar {
+  align-self: flex-end;
+  font-size: 100%;
+ text-decoration: underline;
+ color: inherit;
+
+
+
+}
+
+/* <!-- simbolo del menu --> */
+.material-symbols-outlined{
+  font-size: 200%;
+}
+
+
+.menu {
+  padding-left: 60%;
+
+}
+
+/* <!-- grid de 4 columnas por 3 filas --> */
+.contenedor-peli{
+  display: grid;
+  grid-template-columns:repeat(4, 27vh);
+  grid-template-rows: repeat(3, 42vh);
+  width: 100%;
+  height: 76%;
+  justify-content: center;
+  grid-gap: 20px;
+  padding-top: 28px;
+  padding-bottom: 15px;
+ 
+}
+
+/* <!-- las 12 películas --> */
+.pelicula{
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  
+
+}
+/* efecto al posicionar el cursor */
+.pelicula:hover{
+transform:scale(1.2);
+
+
+}
+/* efecto al hacer clic */
+.pelicula:active{
+  background-color: rgb(255, 196, 0);
+
+}
+/* <!-- franja amarilla de abajo --> */
+.contenedor-inferior{
+  background-color: rgb(255, 196, 0);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height:14%;
+  padding-top: 10px;
+}
+/* <!-- promocion del 20%--> */
+.promocion{
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  font-family: cursive;
+}
+ /* dos imagenes inferiores */
+.img{
+  max-width: 90%;
+  cursor: pointer;
+}
+/* <!-- cuenta en las redes --> */
+.redes{
+  font-family: 'Shrikhand', cursive;
+  font-size: 250%;
+}
